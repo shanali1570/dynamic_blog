@@ -24,6 +24,7 @@ const HeroSection = () => {
         
         
         <PostSection num={1} img=''/>
+        
 
         </div>
       </div>
