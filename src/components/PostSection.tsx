@@ -8,7 +8,7 @@ const PostSection = ({startnum=0 ,endnum=posts.length, img="hidden"}:{startnum?:
   const displayedPosts = posts.slice(startnum, endnum); // Display only the first 5 products
 
   return (
-    <div className="grid grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {displayedPosts.map((post) => (
               <div key={post.slug} className="p-4 bg-white shadow rounded hover:shadow-lg transition-shadow duration-300">
                 <Link href={`/blog/${post.slug}`}>
