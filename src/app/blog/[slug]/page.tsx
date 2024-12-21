@@ -10,7 +10,7 @@ interface BlogPostProps {
 export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = use(params);
   const router = useRouter();
-
+console.log(router)
   if (!slug) {
     return <div>Loading...</div>;
   }
