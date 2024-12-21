@@ -24,10 +24,11 @@ const Page = () => {
         <h2 className="text-4xl font-bold mb-8">About Us</h2>
 
         <h2 className=" text-xl font-bold text-justify mb-8">
-      Hey, I'm a Senior Student at GIAIC.
+          {`Hey, I'm a Senior Student at GIAIC.
       I'm learning and enjoy working with Next.js-15, 
       TypeScript or Tailwind 
-      and crafting beautiful front-end experiences.
+      and crafting beautiful front-end experiences.`}
+      
       </h2>
 
       <h2 className=" text-2xl font-bold text-justify mb-8">
