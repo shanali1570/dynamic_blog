@@ -17,13 +17,13 @@ const HeroSection = () => {
 
         {/* Posts Section - Right Side */}
         
-        <div className="md:w-1/2 flex flex-col p-12 justify-center bg-slate-100 rounded-md">
+        <div className="md:w-1/2 flex flex-col  px-2 justify-center bg-slate-100 rounded-md">
           {/* Posts Section - Right Side */}
          
-        <h2 className="text-4xl font-bold mb-8">The latest blogs</h2>
+        <h2 className="text-4xl font-bold mb-8 pt-4">The latest blogs</h2>
         
         
-        <PostSection num={1} img=''/>
+        <PostSection endnum={1} img=''/>
         
 
         </div>

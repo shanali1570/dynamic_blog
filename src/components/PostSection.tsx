@@ -2,15 +2,15 @@ import {posts} from '@/app/api/blog/data'
 import Image from 'next/image';
 import Link from 'next/link'
 
-const PostSection = ({num=posts.length, img="hidden"}:{num?:number, img?:string}) => {
+const PostSection = ({startnum=0 ,endnum=posts.length, img="hidden"}:{startnum?:number, endnum?:number, img?:string}) => {
 
     // Slice the products array to show only the first 5 products
-  const displayedPosts = posts.slice(0, num); // Display only the first 5 products
+  const displayedPosts = posts.slice(startnum, endnum); // Display only the first 5 products
 
   return (
     <div className="grid grid-cols-1 gap-8">
             {displayedPosts.map((post) => (
-              <div key={post.slug} className="p-6 bg-white shadow rounded hover:shadow-lg transition-shadow duration-300">
+              <div key={post.slug} className="p-4 bg-white shadow rounded hover:shadow-lg transition-shadow duration-300">
                 <Link href={`/blog/${post.slug}`}>
 
                 <Image 
