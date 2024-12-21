@@ -1,8 +1,7 @@
-import Image from 'next/image';
 import PostSection from './PostSection';
 
 
-const AboutSection = () => {
+const BlogSection = () => {
   return (
     <div className=" p-8 flex flex-col md:flex-row md:space-x-8">
         
@@ -21,4 +20,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default BlogSection

@@ -1,4 +1,4 @@
-import AboutSection from "@/components/AboutSection";
+import BlogSection from "@/components/BlogSection";
 import HeroSection from "@/components/HeroSection";
 
 
@@ -10,7 +10,9 @@ export default function Home() {
     <div>
     <HeroSection/>
     
-    <AboutSection/>
+    <BlogSection/>
+    
+    
     </div>
 
     
