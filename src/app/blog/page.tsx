@@ -4,7 +4,7 @@ import React from 'react'
 const Page = () => {
   return (
     <div className='pt-8'>
-        <PostSection />
+        <PostSection img='' />
     </div>
   )
 }

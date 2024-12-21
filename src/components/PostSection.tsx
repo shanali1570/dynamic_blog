@@ -2,7 +2,7 @@ import {posts} from '@/app/api/blog/data'
 import Image from 'next/image';
 import Link from 'next/link'
 
-const PostSection = ({num=posts.length}:{num?:number}) => {
+const PostSection = ({num=posts.length, img="hidden"}:{num?:number, img?:string}) => {
 
     // Slice the products array to show only the first 5 products
   const displayedPosts = posts.slice(0, num); // Display only the first 5 products
@@ -16,6 +16,9 @@ const PostSection = ({num=posts.length}:{num?:number}) => {
                 <Image 
                   src={post.imagelink}
                   alt='Next'
+                  width={500}
+                  height={500}
+                  className={`h-auto w-full rounded-lg ${img}`}
                 />
                 <div>
                 <i className="text-gray-700 "><strong>{post.date}</strong> </i>
