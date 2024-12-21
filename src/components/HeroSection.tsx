@@ -23,7 +23,7 @@ const HeroSection = () => {
         <h2 className="text-4xl font-bold mb-8">The latest blogs</h2>
         
         
-        <PostSection num={1} />
+        <PostSection num={1} img=''/>
 
         </div>
       </div>
