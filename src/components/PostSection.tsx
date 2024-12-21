@@ -1,4 +1,4 @@
-import {posts} from '@/app/api/blog/route'
+import {posts} from '@/app/api/blog/data'
 import Image from 'next/image';
 import Link from 'next/link'
 
