@@ -14,15 +14,15 @@ const CommentsSection: React.FC = () => {
   return (
     <div className="mt-8 p-4 bg-white shadow rounded">
       <h3 className="text-xl font-semibold mb-4">Comments</h3>
-      <div className="mb-4">
+      <div className="mb-4 flex flex-col">
         <textarea
-          className="w-full p-2 border rounded"
+          className="w-1/2 p-2 border rounded"
           placeholder="Write a comment..."
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
         ></textarea>
         <button
-          className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="w-1/4 mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           onClick={handleAddComment}
         >
           Add Comment
@@ -30,7 +30,7 @@ const CommentsSection: React.FC = () => {
       </div>
       <ul className="space-y-2">
         {comments.map((comment, index) => (
-          <li key={index} className="p-2 border rounded">
+          <li key={index} className="p-2 border w-1/2 rounded">
             {comment}
           </li>
         ))}
