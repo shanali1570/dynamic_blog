@@ -1,6 +1,5 @@
 'use client'
 import { use } from 'react';
-import { useRouter } from 'next/navigation';
 import CommentsSection from '../../../components/CommentsSection';
 import {posts} from '@/app/api/blog/data'
 import Image from 'next/image';
