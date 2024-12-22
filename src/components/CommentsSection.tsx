@@ -16,7 +16,7 @@ const CommentsSection: React.FC = () => {
       <h3 className="text-xl font-semibold mb-4">Comments</h3>
       <div className="mb-4 flex flex-col">
         <textarea
-          className="w-1/2 p-2 border rounded"
+          className="md:w-1/2 p-2 border rounded"
           placeholder="Write a comment..."
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
