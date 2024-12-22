@@ -18,7 +18,7 @@ const PostSection = ({startnum=0 ,endnum=posts.length, img="hidden"}:{startnum?:
                   alt='Next'
                   width={500}
                   height={500}
-                  className={`h-auto w-full rounded-lg ${img}`}
+                  className={`h-[250px] w-full rounded-lg ${img}`}
                 />
                 <div>
                 <i className="text-gray-700 "><strong>{post.date}</strong> </i>
